@@ -73,43 +73,43 @@ body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Ne
 }
 
 .contact-item .icon {
-  margin-bottom: 0.5rem;
-}
-
-.social-title {
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
-.social-links {
+.social-buttons {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: center; /*centers them horizontally */
+  gap: 1.2rem; /* spaces them evenly */
+  margin-top: 1rem; /* add space above the section */
+  flex-wrap: wrap; /* allows them to go to next line on small screens */
 }
 
 .social-btn {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.5rem 1rem;
+  background: #f8f8f8;
+  padding: 0.5rem 0.8rem;
   border-radius: 8px;
-  background: #fff;
-  color: #de676a;
-  font-weight: 500;
   text-decoration: none;
-  transition: transform 0.2s ease;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .social-btn:hover {
-  transform: translateY(-3px);
-  background: #ffe8ea;
+  background: #e0e0e0;
+  transform: translateY(-2px);
 }
 
-.instagram svg,
-.facebook svg,
-.whatsapp svg {
-  flex-shrink: 0;
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
 }
+
+
 
 
 
