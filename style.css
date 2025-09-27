@@ -109,9 +109,83 @@ body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Ne
   margin-right: 8px;
 }
 
+/* Navbar Base Styles */
+.navbar {
+  background: #264d26;
+  color: white;
+  padding: 1rem 0;
+}
 
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+/* Desktop Links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d4f7d4;
+}
+
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #2f5d2f;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    width: 180px;
+  }
+
+  .nav-links a {
+    padding: 0.6rem 0;
+    text-align: right;
+  }
+
+  /* Show menu when active */
+  .nav-links.active {
+    display: flex;
+  }
+}
 
 @keyframes fadeUp{
   to {opacity:1; transform:translateY(0);}
